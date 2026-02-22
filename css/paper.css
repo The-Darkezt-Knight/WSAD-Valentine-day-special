@@ -8,16 +8,9 @@
             transparent 31px,
             #c9b99a 31px,
             #c9b99a 32px
-        ),
-        /* Subtle aged paper texture via layered gradients */
-        linear-gradient(
-            180deg,
-            rgba(219, 196, 144, 0.25) 0%,
-            rgba(245, 230, 184, 0.0) 30%,
-            rgba(209, 183, 120, 0.15) 60%,
-            rgba(245, 230, 184, 0.0) 100%
         );
-    background-size: 100% 100%;
+    background-size: 100% 32px;
+    background-repeat: repeat;
 
     /* Shape & spacing */
     padding: 40px 32px 32px 56px;
@@ -109,14 +102,9 @@
                 transparent 27px,
                 #c9b99a 27px,
                 #c9b99a 28px
-            ),
-            linear-gradient(
-                180deg,
-                rgba(219, 196, 144, 0.25) 0%,
-                rgba(245, 230, 184, 0.0) 30%,
-                rgba(209, 183, 120, 0.15) 60%,
-                rgba(245, 230, 184, 0.0) 100%
             );
+        background-size: 100% 28px;
+        background-repeat: repeat;
     }
 
     .paper::before {
