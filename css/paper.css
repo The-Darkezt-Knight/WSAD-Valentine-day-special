@@ -105,6 +105,16 @@
             );
         background-size: 100% 28px;
         background-repeat: repeat;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .paper-body {
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
 
     .paper::before {
