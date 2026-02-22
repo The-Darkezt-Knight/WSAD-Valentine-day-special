@@ -95,3 +95,38 @@
     white-space: pre-wrap;
     word-break: break-word;
 }
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .paper {
+        padding: 30px 20px 24px 40px;
+        min-height: 150px;
+        font-size: 14px;
+        line-height: 28px;
+        background-image:
+            repeating-linear-gradient(
+                transparent,
+                transparent 27px,
+                #c9b99a 27px,
+                #c9b99a 28px
+            ),
+            linear-gradient(
+                180deg,
+                rgba(219, 196, 144, 0.25) 0%,
+                rgba(245, 230, 184, 0.0) 30%,
+                rgba(209, 183, 120, 0.15) 60%,
+                rgba(245, 230, 184, 0.0) 100%
+            );
+    }
+
+    .paper::before {
+        left: 30px;
+    }
+
+    .paper::after {
+        width: 30px;
+        height: 30px;
+        top: 8px;
+        right: 12px;
+    }
+}

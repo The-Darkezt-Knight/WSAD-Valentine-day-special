@@ -41,3 +41,21 @@ body{
     z-index: 0;
     overflow-y: auto;
 }
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px 5px 15px 5px;
+        gap: 15px;
+    }
+
+    #letters-section {
+        min-height: auto;
+        padding: 15px !important;
+    }
+
+    #letters-section .paper p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+}

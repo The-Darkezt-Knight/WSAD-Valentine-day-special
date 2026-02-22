@@ -54,3 +54,31 @@ body{
     min-height: 10vh;
 }
 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px 5px 15px 5px;
+        gap: 15px;
+    }
+
+    #letters-section {
+        min-height: 60vh;
+        padding: 15px !important;
+    }
+
+    #input-form {
+        padding: 15px !important;
+        flex-direction: column;
+        gap: 10px !important;
+    }
+
+    #input-form button {
+        width: 100%;
+    }
+
+    #input-letters {
+        min-height: 80px;
+        font-size: 14px;
+    }
+}
+

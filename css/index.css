@@ -83,3 +83,78 @@ body{
     background-color: var(--primary-bg);
     line-height: 0.3;
 }
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    #introduction h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #introduction {
+        line-height: 1.2;
+        padding: 20px !important;
+    }
+
+    #card-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px !important;
+    }
+
+    #card-container .card {
+        width: 90vw;
+        min-width: unset;
+        max-width: 400px;
+        min-height: auto;
+        padding: 20px !important;
+    }
+
+    #card-container .card .card-header {
+        min-height: 10vh;
+        padding: 15px !important;
+    }
+
+    #card-container .card .card-header h2 {
+        font-size: 1.5rem;
+    }
+
+    #card-container .card .card-body {
+        min-height: auto;
+        height: auto;
+        padding: 15px !important;
+    }
+
+    #card-container .card .card-body button {
+        height: auto;
+        max-height: none;
+        padding: 10px 15px;
+    }
+
+    #card-container .card .card-footer {
+        min-height: auto;
+        padding: 15px !important;
+    }
+
+    #card-container .card .card-footer p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .modal-dialog {
+        margin: 10px;
+        max-width: calc(100vw - 20px);
+    }
+
+    .modal-header {
+        line-height: 1.2;
+    }
+
+    .modal-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .modal-header p {
+        font-size: 0.9rem;
+    }
+}
