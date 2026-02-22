@@ -1,0 +1,56 @@
+:root ::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+    user-select: none;
+    --primary-bg: palevioletred;
+    --secondary-bg: rgb(240, 186, 204);
+    --primary-text: white;
+    --secondary-text: rgb(134, 40, 40);
+}
+
+.highlighted{
+    font-weight: 1000;
+    color: var(--primary-text)
+}
+
+.semi-highlighted{
+    font-weight: 500;
+    color: var(--primary-text);
+}
+
+body{
+    min-height: 100vh;
+    max-height: 100vh;
+    min-width: 100%;
+    padding: 10px 10px 20px 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    background-color: var(--primary-bg);
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+#letters-section{
+    flex-grow: 6;
+    min-height: 65vh;
+    z-index: 0;
+    overflow-y: auto;
+}
+
+#input-form {
+    box-sizing: border-box;
+    flex-grow: 1;
+    background-color: var(--secondary-bg);
+    display: none;
+    z-index: 1;
+}
+
+#input-letters {
+    min-height: 10vh;
+}
+

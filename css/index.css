@@ -1,0 +1,85 @@
+:root ::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+    user-select: none;
+    --primary-bg: palevioletred;
+    --secondary-bg: rgb(240, 186, 204);
+    --primary-text: white;
+    --secondary-text: rgb(134, 40, 40);
+}
+
+.highlighted{
+    font-weight: 1000;
+    color: var(--primary-text)
+}
+
+.semi-highlighted{
+    font-weight: 500;
+    color: var(--primary-text);
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100%;
+    padding: 10px 10px 20px 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    background-color: var(--primary-bg);
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+#introduction{
+    line-height: 0.3;
+}
+
+#introduction h1{
+    font-size: 50px;
+}
+
+#card-container .card{
+    min-width: 15vw;
+    width: 30vw;
+    min-height: 50vh;
+    transition: transform 0.3s ease;
+}
+
+#card-container .card:hover{
+    transform: translateY(-6px);
+    color: #5a1f2b;
+}
+
+#card-container .card .card-header{
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+    min-height: 15vh;
+}
+
+#card-container .card .card-body{
+    min-height: 10vh;
+    height: 15vh;
+}
+
+#card-container .card .card-body button{
+    max-height: 15vh;
+    height: 5vh;
+}
+
+#card-container .card .card-footer{
+    min-height: 15vh;
+    background-color: var(--secondary-bg);
+}
+
+#card-container .card .card-footer p{
+    color: var(--secondary-text);
+}
+
+.modal-header{
+    background-color: var(--primary-bg);
+    line-height: 0.3;
+}

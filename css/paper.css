@@ -1,0 +1,97 @@
+.paper {
+    /* Old yellowed paper base */
+    background-color: #f5e6b8;
+    background-image:
+        /* Horizontal ruled lines */
+        repeating-linear-gradient(
+            transparent,
+            transparent 31px,
+            #c9b99a 31px,
+            #c9b99a 32px
+        ),
+        /* Subtle aged paper texture via layered gradients */
+        linear-gradient(
+            180deg,
+            rgba(219, 196, 144, 0.25) 0%,
+            rgba(245, 230, 184, 0.0) 30%,
+            rgba(209, 183, 120, 0.15) 60%,
+            rgba(245, 230, 184, 0.0) 100%
+        );
+    background-size: 100% 100%;
+
+    /* Shape & spacing */
+    padding: 40px 32px 32px 56px;
+    min-height: 200px;
+    height: auto;
+    overflow: visible;
+    border-radius: 2px;
+    position: relative;
+
+    /* Typography — handwritten feel */
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 32px;          /* matches ruled-line spacing */
+    color: #3a2e1e;
+    white-space: pre-wrap;
+    word-break: break-word;
+
+    /* Flat old-paper shadow */
+    box-shadow:
+        2px 3px 8px rgba(0, 0, 0, 0.18),
+        inset 0 0 40px rgba(180, 155, 100, 0.12);
+
+    /* Aged edges */
+    border: 1px solid #d4c49a;
+    border-bottom: 2px solid #c4ad7c;
+
+    /* Smooth entrance */
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* Red left margin line */
+.paper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 42px;
+    width: 2px;
+    height: 100%;
+    background: #e09090;
+    opacity: 0.7;
+}
+
+/* Subtle coffee-stain / age mark in top-right corner */
+.paper::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(
+        circle,
+        rgba(180, 140, 80, 0.12) 0%,
+        rgba(180, 140, 80, 0.04) 60%,
+        transparent 100%
+    );
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Gentle lift on hover */
+.paper:hover {
+    box-shadow:
+        3px 5px 14px rgba(0, 0, 0, 0.22),
+        inset 0 0 40px rgba(180, 155, 100, 0.12);
+    transform: translateY(-2px);
+}
+
+.paper-author {
+    font-weight: 700;
+    color: var(--secondary-text);
+}
+
+.paper-body {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
